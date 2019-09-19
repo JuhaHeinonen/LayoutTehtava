@@ -42,14 +42,31 @@
             tools:srcCompat="@tools:sample/avatars[2]" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/section3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFEB3B" >
+        android:background="#FFEB3B"
+        android:orientation="vertical">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/subsection1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#9C27B0" />
+
+        <RelativeLayout
+            android:id="@+id/subsection2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#673AB7" />
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/section4"
