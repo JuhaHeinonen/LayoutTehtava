@@ -2,9 +2,11 @@ package com.example.layouttehtava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btn1 = findViewById(R.id.button1);
         final Button btn2 = findViewById(R.id.button2);
         final Button btn3 = findViewById(R.id.button3);
+        final ImageView img = findViewById(R.id.picture1);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -34,21 +37,20 @@ public class MainActivity extends AppCompatActivity {
                     btn3.setEnabled(true);
                     count--;
                 }
-
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                img.setVisibility(View.INVISIBLE);
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                img.setVisibility(View.VISIBLE);
             }
         });
     }

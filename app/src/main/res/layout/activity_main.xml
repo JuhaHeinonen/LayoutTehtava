@@ -4,24 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/section1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#F44336" >
+        android:background="#F44336"
+        android:gravity="center">
 
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="56dp"
             android:text="@string/button1" />
     </RelativeLayout>
 
@@ -40,7 +36,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="-2dp"
             android:layout_marginBottom="2dp"
-            tools:srcCompat="@tools:sample/avatars[2]" />
+            tools:srcCompat="@tools:sample/avatars[2]"
+            android:src="@drawable/images"/>
     </RelativeLayout>
 
     <LinearLayout
